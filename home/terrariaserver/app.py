@@ -1,6 +1,8 @@
 from flask import *
 import math
 import os
+import subprocess
+import time
 
 ###
 # TU WSZYSTKO DZIEJE SIĘ SERVERSIDE AŁĆ XD
@@ -11,7 +13,7 @@ inf = math.inf
 app = Flask(__name__)
 app.secret_key = str(os.urandom(24)).encode("utf-8")
 funcCounter = 0
-import time
+
 
 
 @app.route('/(', methods = ["GET", "POST"])
@@ -34,7 +36,6 @@ def funcCounter1():
     print("OFF")
     return render_template('index.htm', calc = session['kalkulacja'])
 
-import subprocess
 @app.route('/', methods = ["GET", "POST"])
 def hello():
     cmd = "sudo systemctl status terraria | grep Active:*"
