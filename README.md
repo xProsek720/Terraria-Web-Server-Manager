@@ -36,3 +36,9 @@ Web app that does Start and Stop for Ubuntu Terraria Server
 ## If you want to see the console of terraria server then you can:
 
 ```sudo terrariad attach```
+
+## If you want to dettach the console
+
+```Ctrl + A``` then ```d```
+
+You can clear your screen after all: ```Ctrl + L```
