@@ -31,3 +31,8 @@ Web app that does Start and Stop for Ubuntu Terraria Server
 6. To apply and run web app do cmd below:
 
 ```sudo service supervisor reload```
+
+
+## If you want to see the console of terraria server then you can:
+
+```sudo terrariad attach```
