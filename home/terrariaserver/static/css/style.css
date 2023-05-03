@@ -1,0 +1,143 @@
+body{
+    background-color: #0B3954;
+}
+body p
+{
+    color: #087E8B;
+    margin-bottom: 10px;
+}
+.center{
+    text-align: center;
+    font-size: 72px;
+    justify-content: center;
+}
+::selection
+{
+	color: #0B3954;
+	background-color: #087E8B;
+}
+::-moz-selection
+{
+	color: #0B3954;
+	background-color: #087E8B;
+}
+::-webkit-selection
+{
+	color: #0B3954;
+	background-color: #087E8B;
+}
+input::selection
+{
+	color: #087E8B;
+	background-color: #0B3954;
+}
+input::-moz-selection
+{
+	color: #087E8B;
+	background-color: #0B3954;
+}
+input::-webkit-selection
+{
+	color: #087E8B;
+	background-color: #0B3954;
+}
+div#wyswietlacz
+{
+    display: flex;
+}
+.wyswietlacz
+{
+    background-color: #087E8B;
+    color: #0B3954;
+    border: none;
+    width: 40%;
+    height: 40px;
+}
+input.wyswietlacz:disabled
+{
+    font-size: 40px;
+    text-align: center;
+    background-color: #087E8B;
+    border: 0;
+}
+div#klawiatura
+{
+    display: flex;
+    flex-direction: column;
+    border: 2px #0B3954;
+    background-color: #0B3954;
+
+    margin: 0% 30%;
+
+    align-items: center;
+}
+form
+{
+    margin: 0;
+}
+div.przycisk
+{
+    background-color: #0B3954;
+    padding: 10px;
+}
+
+button.przycisk
+{
+    background-color: #0B3954;
+    border: none;
+    padding: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #087E8B;
+}
+button.przycisk:hover
+{
+    background-color: #087E8B;
+    border: none;
+    transition-duration: 0.2s;
+    padding: 15px;
+
+    color: #0B3954;
+}
+button.przycisk:active {
+    background-color: #BFD7EA;
+    border: none;
+    padding: 15px;
+    transition-duration: 0.2s;
+}
+div.top
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+div.row
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+div.bottom
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+@media only screen and (max-width: 600px)
+{
+    .wyswietlacz
+    {
+        background-color: #087E8B;
+        color: #0B3954;
+        border: none;
+        width: 95%;
+        height: 40px;
+    }
+    input.wyswietlacz:disabled
+    {
+        font-size: 40px;
+        text-align: center;
+        background-color: #087E8B;
+        border: 0;
+    }
+}

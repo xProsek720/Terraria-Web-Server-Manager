@@ -1,0 +1,12 @@
+[Unit]
+Description=server daemon for terraria
+
+[Service]
+Type=forking
+User=root
+KillMode=none
+ExecStart=/usr/bin/screen -dmS terraria /bin/bash -c "/home/terraria-server/server/./TerrariaServer.bin.x86_64 -world /home/terraria-server/worlds/JEBANSKO.wld -password newpasswd -motd OFFNIJ_SERVER_POZNIEJ!"
+ExecStop=/usr/local/bin/terrariad exit
+
+[Install]
+WantedBy=multi-user.target
