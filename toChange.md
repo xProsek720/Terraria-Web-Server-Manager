@@ -8,4 +8,4 @@
 
 *TO FIX:*
 
- - [ ] status of server not in cookies
+ - [x] status of server not in cookies
